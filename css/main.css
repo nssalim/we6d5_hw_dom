@@ -1,0 +1,81 @@
+  body {
+    font-family: Helvetica, sans-serif;
+  }
+  header {
+    padding: 1em;
+    background: rgba(20, 255, 204, 0.9);
+  }
+
+  main {
+    min-height: 600px;
+    background: rgba(20, 255, 204, 0.9);
+  }
+ 
+  #endangeredlist-submit input, #endangeredlist-submit select {
+    margin: 0.5em 0.8em;
+    -webkit-box-shadow: 1px 1px 1px 0 lightgray;
+  }
+  #endangeredlist-submit p {
+    margin: 0.2em 1em;
+  }
+  #form-name-animal, #form-endangeredlist-submit {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+  }
+  #form-list-wrapper {
+    display: grid;
+    grid-template-columns: 10% 45% 45%;
+    grid-template-rows: auto;
+    margin: 1em;
+  }
+  .endangeredlist {
+    position: relative;
+    border: 1px solid black;
+    border-radius: 0.5em;
+    padding: 0.5em;
+    margin: 1em;
+    min-width: 20%;
+    background-color: gray
+    color: black;
+    -webkit-box-shadow: 1px 1px 1px 0 lightgray;
+  }
+  #endangeredlist-display {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .endangeredlist ol, .endangeredlist h4, .endangeredlist h2 {
+    margin: 0.3em auto;
+    padding: 0 0.2em;
+  }
+  .endangeredlist ol {
+    padding: 1em 2em;
+  }
+  .endangeredlist li {
+    margin: 0.3em 0;
+  }
+  .endangeredlist h4 {
+    margin-left: 1em;
+  }
+  h4 > span {
+    font-style: italic;
+  }
+
+  /* pop-up result box with close x on rhs which has hover pointer and hover red circle with white cross */
+  .close-button {
+    font-family: Helvetica, sans-serif;
+    position: absolute;
+    top: 0.2em;
+    right: 0.4em;
+    padding: 0.3em;
+    line-height: 1em;
+    width: 1em;
+    text-align: center;
+  }
+  .close-button:hover {
+    color: white;
+    background-color: rgba(255, 94, 20, 0.9);
+    border-radius: 50%;
+    cursor: pointer;
+  }

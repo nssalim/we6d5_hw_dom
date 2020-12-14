@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script src='./js/app.js' type='text/javascript'></script>
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Endangered Animals List App</title>
+  </head>
+  <body>
+    <header>
+      <h1>Endangered Animals</h1>
+      <p>Endanged animals can be found across all Seven Continents:-</p>
+      <ul>
+        <li>Asia</li>
+        <li>Africa</li>
+        <li>North America</li>
+        <li>South America</li>
+        <li>Antartica</li>
+        <li>Europe</li>
+        <li>Australia</li>
+      </ul>
+      <p>There are several classifications for the success of long-term conservation:-</p>
+      <ul>
+        <li>least concern</li>
+        <li>vulnerable</li>
+        <li>near-threatened</li>
+        <li>endangered</li>
+        <li>critically endangered</li>
+      </ul>
+      <h3>Choose your red list of endangered animals</h3>
+      <p></p>
+      <form id="endangeredlist-submit">
+        <div id="form-name-animal">
+          <label for="name">Your name</label>
+          <input required type="text" name="name">
+          <label for="animal">Endangered Animal Name </label>
+          <select class="" name="animal">
+            <option value="Javan rhinoceros">Javan Rhinoceros</option>
+            <option value="Vanquita">Vanquita</option>
+            <option value="Mountain Gorillas">Mountain Gorillas</option>
+            <option value="Tigers">Tigers</option>
+            <option value="Asian Elephants">Asian Elephants</option>
+            <option value="Orangutans">Orangutans</option>
+            <option value="Leather Back Sea Turtles">Leather Back Sea Turtles</option>
+            <option value="Snow Leopards">Snow Leopards</option>
+            <option value="Irrawaddy Dolphins">Irrawaddy Dolphins</option>
+            <option value="Atlantic Blue Fin Tuna">Atlantic Blue Fin Tuna</option>
+            <option value="Kakapo">Kakapo</option>
+            <option value="Gharial">Gharial</option>
+            <option value="Mexican Grizzly Bear">Mexican Grizzly Bear</option>
+            <option value="North Atlantic Night Whale">North Atlantic Night Whale</option>
+            <option value="Saola">Saola</option>
+            <option value="Thin-Spined Porcupine">Thin-Spined Porcupine</option>
+            <option value="Galapagas Penguins">Galapagas Penguins</option>
+            <option value="Bats">Bats</option>
+            <option value="Pengolin">Pengolin</option>
+            <option value="Bonobo">Bonobo</option>
+          </select>
+        </div>
+        <div id="form-endangeredlist-submit">
+          <div id="form-list-wrapper">
+            <p> </p>
+            <p>Continent</p>
+            <p>Conservation Status</p>
+            <label for="status-one">1)</label>
+            <input type="text" name="continent-one">
+            <input type="text" name="status-one">
+            <label for="status-two">2)</label>
+            <input type="text" name="continent-two">
+            <input type="text" name="status-two">
+            <label for="status-three">3)</label>
+            <input type="text" name="continent-three">
+            <input type="text" name="status-three">
+          </div>
+          <br>
+          <br>
+          <input type="submit" id="submit-button" value="Add">
+        </div>
+      </form>
+    </header>
+    <main><button id="delete-all">Delete All</button>
+      <div id="endangeredlist-display">
+      </div>
+    </main>
+  </body>
+</html>
